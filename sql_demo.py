@@ -16,8 +16,6 @@ LLM = Llama(model_path="models/sqlcoder-7b-q5_k_m.gguf", n_gpu_layers=10, n_ctx=
 #)
 #cur = conn.cursor()
 
-
-
 def generate_prompt(question, prompt_file="prompt.md", metadata_file="metadata.sql"):
     with open(prompt_file, "r") as f:
         prompt = f.read()
